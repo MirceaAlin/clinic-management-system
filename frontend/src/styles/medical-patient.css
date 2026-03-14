@@ -1,0 +1,65 @@
+.medical-patient-page {
+  width: 100vw;
+  min-height: 100vh;
+  padding-bottom: 60px;
+  background: radial-gradient(circle at top left, #00ffff33, transparent 60%),
+    radial-gradient(circle at bottom right, #0033ff77, #000814 70%);
+  color: white;
+}
+
+.medical-patient-title {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 38px;
+  font-weight: 800;
+  text-shadow: 0 0 14px rgba(0, 255, 255, 0.6);
+}
+
+.medical-section {
+  width: 90%;
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 28px;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(18px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.7);
+}
+
+.medical-section h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #a8ffff;
+}
+
+.medical-section table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.medical-section th,
+.medical-section td {
+  padding: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  font-size: 15px;
+  text-align: left;
+}
+
+.medical-section th {
+  font-weight: 600;
+  opacity: 0.8;
+}
+
+.medical-section ul {
+  margin-left: 20px;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.empty {
+  opacity: 0.8;
+  font-size: 16px;
+}

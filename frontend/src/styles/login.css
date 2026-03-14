@@ -1,0 +1,209 @@
+.login-page {
+  min-height: 100vh;
+  width: 100%;
+  background: radial-gradient(circle at top left, #00ffff33, transparent 60%),
+    radial-gradient(circle at bottom right, #0033ff77, #000814 70%);
+  color: #ffffff;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.login-navbar {
+  width: 100%;
+  padding: 16px 32px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: rgba(255, 255, 255, 0.07);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(16px);
+}
+
+.login-navbar-logo {
+  height: 48px;
+  width: auto;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.login-navbar-title {
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+  text-shadow: 0 0 12px rgba(0, 255, 255, 0.6);
+}
+
+.login-center {
+  width: 100%;
+  max-width: 820px;
+  margin: 0 auto;
+  margin-top: 70px;
+  padding: 0 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-main-title {
+  font-size: 38px;
+  font-weight: 700;
+  margin-bottom: 32px;
+  text-shadow: 0 0 18px rgba(0, 255, 255, 0.4);
+}
+
+.login-role-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.login-role-card {
+  width: 100%;
+  padding: 26px 30px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, rgba(255,255,255,0.16), rgba(255,255,255,0.05));
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(18px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.login-role-card h3 {
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+
+.login-role-card p {
+  font-size: 15px;
+  opacity: 0.85;
+}
+
+.login-role-card:hover {
+  transform: scale(1.03);
+  border-color: #00ffff;
+  box-shadow: 0 24px 55px rgba(0, 255, 255, 0.55);
+  background: linear-gradient(135deg, rgba(0,255,255,0.25), rgba(255,255,255,0.12));
+}
+
+.login-back {
+  align-self: flex-start;
+  margin-bottom: 20px;
+  background: none;
+  border: none;
+  color: #ffffffcc;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.login-back:hover {
+  color: #00ffff;
+}
+
+.login-form-card {
+  width: 100%;
+  max-width: 520px;
+  border-radius: 24px;
+  padding: 32px;
+  background: linear-gradient(135deg, rgba(255,255,255,0.16), rgba(255,255,255,0.05));
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(18px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.login-field-glass {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 15px;
+}
+
+.login-field-glass input {
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  background: rgba(0, 0, 0, 0.4);
+  color: white;
+  padding: 12px;
+  font-size: 15px;
+  outline: none;
+  width: 100%;
+}
+
+.login-field-glass input::placeholder {
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.login-field-glass input:focus {
+  border-color: #00ffff;
+  box-shadow: 0 0 0 2px rgba(0, 255, 255, 0.2);
+}
+
+.password-row {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.password-row input {
+  width: 100%;
+  padding-right: 42px;
+}
+
+.password-toggle-glass {
+  position: absolute;
+  right: 10px;
+  font-size: 18px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1;
+  padding: 0;
+}
+
+.login-forgot-link {
+  text-align: right;
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: underline;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.login-submit-glass-btn {
+  width: 100%;
+  padding: 14px 0;
+  font-size: 17px;
+  font-weight: 600;
+  border-radius: 14px;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(135deg, #00ffff, #77ffff);
+  color: #002020;
+  box-shadow: 0 12px 35px rgba(0, 255, 255, 0.45);
+  transition: 0.2s ease;
+}
+
+.login-submit-glass-btn:hover:not(:disabled) {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 45px rgba(0, 255, 255, 0.8);
+}
+
+.login-submit-glass-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}

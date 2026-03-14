@@ -1,0 +1,107 @@
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 15, 15, 0.6);
+  backdrop-filter: blur(8px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-glass {
+  background: rgba(15, 30, 50, 0.95);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  padding: 30px;
+  width: 440px;
+  max-width: 92vw;
+  color: white;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.6);
+}
+
+.modal-title {
+  margin-bottom: 20px;
+  font-size: 22px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.modal-form label {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  opacity: 0.9;
+  gap: 6px;
+}
+
+.modal-form input,
+.modal-form select,
+.modal-form textarea {
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  outline: none;
+  font-size: 14px;
+  font-family: inherit;
+}
+
+.modal-form input::placeholder,
+.modal-form textarea::placeholder {
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.modal-form input:focus,
+.modal-form select:focus,
+.modal-form textarea:focus {
+  border-color: #00ffff;
+}
+
+.modal-form select option {
+  background: #1a2a3a;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.btn-cancel,
+.btn-save {
+  flex: 1;
+  padding: 10px 0;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: 0.3s;
+  font-size: 14px;
+}
+
+.btn-cancel {
+  background: rgba(255, 255, 255, 0.15);
+  color: #eee;
+}
+
+.btn-cancel:hover { background: rgba(255, 255, 255, 0.25); }
+
+.btn-save {
+  background: linear-gradient(135deg, #00ffff, #00aaff);
+  color: #001520;
+}
+
+.btn-save:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 255, 255, 0.4);
+}

@@ -1,0 +1,138 @@
+.medical-page {
+  width: 100vw;
+  min-height: 100vh;
+  background: radial-gradient(circle at top left, #00ffff33, transparent 60%),
+    radial-gradient(circle at bottom right, #0033ff77, #000814 70%);
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+
+.medical-navbar {
+  width: 100%;
+  padding: 16px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(255, 255, 255, 0.07);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(16px);
+}
+
+.medical-nav-left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.medical-nav-logo {
+  height: 48px;
+  border-radius: 8px;
+}
+
+.medical-nav-title {
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-shadow: 0 0 12px rgba(0, 255, 255, 0.6);
+}
+
+.medical-logout {
+  padding: 10px 18px;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 12px;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+  font-size: 14px;
+}
+
+.medical-logout:hover {
+  background: rgba(0, 255, 255, 0.25);
+}
+
+.medical-title {
+  text-align: center;
+  margin-top: 60px;
+  font-size: 42px;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+  text-shadow: 0 0 20px rgba(0, 255, 255, 0.55);
+}
+
+.medical-search-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.medical-search {
+  width: 520px;
+  padding: 14px 18px;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  background: rgba(0, 0, 0, 0.4);
+  color: white;
+  outline: none;
+  transition: 0.2s;
+  font-size: 15px;
+}
+
+.medical-search::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.medical-search:focus {
+  border-color: #00ffff;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+}
+
+.patient-list {
+  width: 100%;
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+
+.patient-card {
+  padding: 30px;
+  border-radius: 22px;
+  background: linear-gradient(135deg, rgba(255,255,255,0.16), rgba(255,255,255,0.05));
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(18px);
+  cursor: pointer;
+  transition: 0.25s ease;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.7);
+  text-align: center;
+}
+
+.patient-card:hover {
+  transform: translateY(-6px) scale(1.015);
+  border-color: #00ffff;
+  box-shadow: 0 25px 55px rgba(0, 255, 255, 0.45);
+}
+
+.patient-card h2 {
+  font-size: 26px;
+  font-weight: 700;
+  color: #a8ffff;
+  margin-bottom: 6px;
+}
+
+.patient-card p {
+  opacity: 0.85;
+  font-size: 15px;
+}
+
+.no-results {
+  text-align: center;
+  margin-top: 20px;
+  opacity: 0.75;
+  font-size: 17px;
+}
